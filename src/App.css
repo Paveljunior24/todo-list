@@ -1,5 +1,19 @@
+/* General App Styles */
 .App {
   text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
 }
 
 .App-logo {
@@ -13,17 +27,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +38,96 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* To-Do List Styles */
+.TodoWrapper {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.TodoWrapper h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.TodoForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center vertically */
+  margin-bottom: 20px;
+}
+
+.TodoForm input.todo-input {
+  width: calc(100% - 60px); /* Adjusted for better spacing */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.TodoForm button.todo-btn {
+  padding: 10px 20px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.TodoForm button.todo-btn:hover {
+  background-color: #21a1f1;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.Todo {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.Todo.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.Todo p {
+  flex: 1;
+  margin: 0;
+  cursor: pointer;
+}
+
+.Todo button {
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.Todo button:hover {
+  color: #e74c3c;
+}
+
+.todo-footer {
+  margin-top: 20px;
+  color: #666;
+  font-size: 14px;
 }
