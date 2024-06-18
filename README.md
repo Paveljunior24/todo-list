@@ -37,7 +37,7 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However, we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Learn More
 
@@ -45,25 +45,39 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## To-Do List Application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Improved Design
 
-### Analyzing the Bundle Size
+The following improvements were made to the To-Do list application:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Enhanced styling for better readability and user experience.
+- Improved layout and alignment of tasks, form elements, and buttons.
+- Added hover effects for buttons to provide visual feedback.
 
-### Making a Progressive Web App
+The CSS styles have been updated to ensure a clean and user-friendly design for the To-Do list application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Component Improvements
 
-### Advanced Configuration
+#### TodoWrapper Component
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Implemented state management for tasks using `useState`.
+- Added functionality to add new tasks, toggle task completion status, delete tasks, and edit tasks.
+- Improved layout and organization of tasks and form elements within the component.
 
-### Deployment
+#### EditTodoForm Component
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Created a form component specifically for editing tasks.
+- Implemented state management with `useState` for task editing.
+- Enhanced form submission handling to update task descriptions.
+
+#### Todo Component
+
+- Optimized task display component with improved styling and functionality.
+- Added icons for editing and deleting tasks with FontAwesome.
+- Enhanced user interaction with clickable task completion toggle.
+
+### Troubleshooting
 
 ### `npm run build` fails to minify
 
